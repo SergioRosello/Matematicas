@@ -102,16 +102,18 @@ int main()
 	int gradofuncion = 0;
 	int numerolibre;
 
-
+	cout << "De  cuantos grados va a ser la funcion " << endl;
 	cin >> gradofuncion;
 
 	vector <int> datosfuncion;  //Datos de la funcion hoygan xdxd !!11!!!one!!!
 
-	for (int i = 0, n; gradofuncion > datosfuncion.size();i++){
+	for (int i = 0, n; gradofuncion > datosfuncion.size(); i++){  //Este for introduce un nuevo coeficiente por cada grado de la funcion. 
+		cout << "Introduce los grados de la funcion " << endl;
+		// no sería mejor que el programa te los genere automaticamente en vez de meterle uno a uno los grados de la funcion, que normalmente va decreciendo de forma constante?
 		cin >> n;
 		datosfuncion.push_back(n);
-		cout << datosfuncion[i];
 	}
+	//cout << datosfuncion[i];  // no va a funcionar porque i está fuera del scope del for.
 
 	
 	return 0;
